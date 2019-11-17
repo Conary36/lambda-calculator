@@ -19,10 +19,11 @@ const Numbers = (props) => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
         {numberState.map((number, index) => {
-            return (
+            return(
               <NumberButton
                 key={index}
                 buttonText={number}
+                newData={props.newData}
                 // addNumber={props.addNumber}
               />
             )

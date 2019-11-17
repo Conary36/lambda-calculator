@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./App.css";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
-import Operators from "./components/OperatorButtons/OperatorButton/Operators";
+import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 import Specials from "./components/ButttonComponents/SpecialButtons/Specials";
 import Display from "./components/DisplayComponents/Display";
 
@@ -18,11 +18,20 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 const [data, setData] = useState(0);
-const [total, setTotal] = useState(0);
+const [total, setTotal] = useState();
 
 const newData = (entry) =>{
+  console.log(entry);
   setData(entry);
 }
+/*Calculation...
+const calc = ()=>{
+  get value of number being pushed
+  combine values
+  use combined values to be passed into array
+  show array index.value
+}
+*/
 
   return (
     <div className="container">
@@ -30,10 +39,11 @@ const newData = (entry) =>{
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         {/* <NumberButton title="props1"/> */}
+        <Display data={data} total={total}/>
         <Numbers newData = {newData}/>
         <Operators newData = {newData}/>
         <Specials newData = {newData}/>
-        <Display data = {total}/>
+        
       </div>
     </div>
   );
