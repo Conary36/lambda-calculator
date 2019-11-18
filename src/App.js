@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./App.css";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
-import Specials from "./components/ButttonComponents/SpecialButtons/Specials";
+//import Specials from "./components/ButttonComponents/SpecialButtons/Specials";
 import Display from "./components/DisplayComponents/Display";
 
 // STEP 4 - import the button and display components
@@ -42,7 +42,7 @@ const calc = ()=>{
         <Display data={data} total={total}/>
         <Numbers newData = {newData}/>
         <Operators newData = {newData}/>
-        <Specials newData = {newData}/>
+        {/* <Specials newData = {newData}/> */}
         
       </div>
     </div>

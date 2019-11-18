@@ -21,6 +21,7 @@ const Specials = (props) => {
           <SpecialButton
             key={index}
             buttonText={special}
+            newData={props.newData}
             // addSpecial={props.addSpecial}
           />
         )
