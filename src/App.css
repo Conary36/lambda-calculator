@@ -20,3 +20,48 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+  .buttons1{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+  }
+  .operatorDiv{
+      width: 50%;
+      margin-top: -21%;
+  }
+  .numbers_button,.operations_button,.special_button{
+      border-radius: 50%;
+      background-color: #123C73;
+      color: white;
+      width: 70px;
+      height: 70px;
+      margin: 5%;
+  }
+  .numbutton{
+      margin: 1%;
+      margin-left: 2.5%;
+  }
+  .numbers_button{
+      background-color: #123C73;
+
+  }
+  .opbutton{
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 29%;
+      margin-top: 3.8%;
+      
+  }
+  .operations_button{
+      background-color: #3DBCD9;
+      margin: 16%;
+     
+  }
+  .spbutton{ 
+    margin-left: 0.5%
+
+  }
+  .special_button{
+      background-color: #1F67A6;
+      
+  }
