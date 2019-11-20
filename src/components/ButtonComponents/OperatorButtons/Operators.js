@@ -23,7 +23,7 @@ const Operators = (props) => {
             key = {index}
             buttonChar = {operator.char}
             buttonVal = {operator.value}
-            // addItem={props.addItem}
+            newData={props.newData}
           />
         )
       })}
